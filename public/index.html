@@ -6,19 +6,27 @@
     <title>React 3d Carousel</title>
     <!--    <script src="http://fb.me/react-0.13.3.js"></script>-->
     <style>
+        body {
+            background-color: aquamarine;
+        }
         .content {
             height: 600px;
             width: 1000px;
-            position: relative;
+            position: relative;         
         }
         .box {
             height: 100px;
             width: 100px;
             position: absolute;
+            background-size: 100%;
         }
         .lancia {
-            background-image: url('img/lancia.jpg');
-            background-size: 100%;
+            top:200px;
+            background-image: url('img/lancia.jpg');            
+        }
+        .maserati {
+            left:100px;
+            background-image: url('img/maserati.jpg');            
         }
     </style>    
 <!--    <script src='../node_modules/ramda/dist/ramda.js'></script>-->
@@ -29,6 +37,7 @@
 <body>
     <div id='content'>
         <div id='lancia' class='box lancia'></div>
+         <div id='maserati' class='box maserati'></div>
     </div>
     <script type="text/javascript" src='bundle.js'></script>
 </body>
